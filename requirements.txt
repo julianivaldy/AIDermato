@@ -39,3 +39,5 @@ urllib3==2.1.0
 virtualenv==20.25.0
 xattr==0.10.1
 zipp==3.17.0
+openai==0.27.10
+
