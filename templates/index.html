@@ -11,39 +11,80 @@
 </head>
 <body>
 
-<!-- New section: AIDermato Title -->
-<header class="bg-gray-800 text-white text-center py-4">
-    <h1 class="text-4xl font-bold">AIDermato</h1>
-</header>
-
-<!-- New section: About -->
-<section class="py-8 px-4">
-    <h2 class="text-2xl font-bold">About</h2>
-    <p>AIDermato is an open source dermatologist. He can chat with you today. The idea is to make it evolve.</p>
-</section>
+<div id="chat-template" class="hidden odd:bg-slate-50 even:bg-slate-200 p-6">
+    <p class="message"></p>
+</div>
 
 <main class="mx-auto max-w-6xl px-4 py-10 flex flex-col">
     <div id="gpt-output"></div>
-    <h1>AI Dermato chat</h1>
+    <h1 style="font-size: 30px; font-weight: bold;">AI Dermato</h1>
+    <p>Monitor the state & evolution of your moles to prevent skin cancer.</p>
+    <br>
+    <h1 style="font-size: 15px; font-weight: bold;">Why?</h1>
+    <p>TBH, I created it for my personal use & that of my family (+ to practice coding). I thought I'd share the code instead of throwing it in the garbage can.</p>
+    <br>
+    <h1 style="font-size: 15px; font-weight: bold;">Contribute:</h1>
+    <p>Open source, non-profit project. All contributions are welcome (<a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Github</a>)</p>
+    <br>
+    <br>
+    <h1 style="font-size: 20px; font-weight: bold;">1 - AI Dermato chat:</h1>
+    <p>A chat with an AI dermatologist about your moles.</p>
     <form id="prompt-form" class="mt-auto">
-        <!-- ... (existing code for the chat form) ... -->
+        <label for="prompt" class="sr-only">Prompt</label>
+        <div>
+            <label for="prompt" class="sr-only">User Prompt</label>
+            <div class="relative mt-2 rounded-md shadow-sm">
+                <input type="text" name="prompt" id="prompt"
+                       class="block w-full rounded-md border-0 py-2.5 pl-4 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                       placeholder="Describe your mole">
+                <button class="btn-primary absolute inset-y-0 right-0 flex items-center pr-3">
+                    <svg class="hidden" id="spinner-icon" width="24" height="24" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <style>.spinner_b2T7 {
+                            animation: spinner_xe7Q .8s linear infinite
+                        }
+
+                        .spinner_YRVV {
+                            animation-delay: -.65s
+                        }
+
+                        .spinner_c9oY {
+                            animation-delay: -.5s
+                        }
+
+                        @keyframes spinner_xe7Q {
+                            93.75%, 100% {
+                                r: 3px
+                            }
+                            46.875% {
+                                r: .2px
+                            }
+                        }</style>
+                        <circle class="spinner_b2T7" cx="4" cy="12" r="3"/>
+                        <circle class="spinner_b2T7 spinner_YRVV" cx="12" cy="12" r="3"/>
+                        <circle class="spinner_b2T7 spinner_c9oY" cx="20" cy="12" r="3"/>
+                    </svg>
+                    <svg id="send-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none" class="h-4 w-4 m-1 md:m-0" stroke-width="2">
+                        <path d="M.5 1.163A1 1 0 0 1 1.97.28l12.868 6.837a1 1 0 0 1 0 1.766L1.969 15.72A1 1 0 0 1 .5 14.836V10.33a1 1 0 0 1 .816-.983L8.5 8 1.316 6.653A1 1 0 0 1 .5 5.67V1.163Z"
+                              fill="currentColor"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </form>
     <br>
-    
-    <!-- New section: Contribute -->
-    <section class="py-8 px-4">
-        <h2 class="text-2xl font-bold">Contribute</h2>
-        <p>I'm Julian, I'm making this product for my personal use and that of my family (having had several family members die of skin cancer too young). I've decided to make it accessible to everyone so that everyone can contribute to improving it.</p>
-    </section>
-
-    <!-- Existing sections for Image and Video Analysis -->
-    <h1>AI Dermato Image Analyse (Coming Soon)</h1>
-    <a href="https://www.example.com" style="color: blue;">Contribute to the open-source project</a>
+    <h1 style="font-size: 20px; font-weight: bold;">2 - AIDermato Image Analyse (Could be cool!)</h1>
+    <p>A mole photo scanner from a database of cancerous & non-cancerous moles.</p>
+    <a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Contribute to the open-source projet</a>
     <br>
-    <h1>AI Dermato Video Analyse (Coming Soon)</h1>
-    <a href="https://www.example.com" style="color: blue;">Contribute to the open-source project</a>
+    <h1 style="font-size: 20px; font-weight: bold;">3 - AIDermato Video Analyse (Why not?)</h1>
+    <p>A mole video scanner from a database of cancerous & non-cancerous moles.</p>
+    <a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Contribute to the open-source projet</a>
+    <br>
+    <br>
+    <p style="color: red; font-style: italic; font-size: 15px;">*This is not a medical tool but a simple open source project for self-analysis & prevention.</p>
 </main>
 
 <script src="{{ url_for('static', filename='dist/js/script.js') }}"></script>
 </body>
 </html>
+
