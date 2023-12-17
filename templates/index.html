@@ -19,15 +19,15 @@
     <h1 style="font-size: 30px; font-weight: bold;">AI Dermato</h1>
     <p>Monitor the state & evolution of your moles to prevent skin cancer.</p>
     <br>
-    <h1 style="font-size: 15px; font-weight: bold;">Why?</h1>
-    <p>TBH, I created it for my personal use & that of my family (+ to practice coding). I thought I'd share the code instead of throwing it in the garbage can.</p>
+    <h1 style="font-size: 15px; font-weight: bold;">About:</h1>
+    <p>I'm <a href="https://julianivaldy.com" style="color: blue;" target="_blank">Julian</a>, several members of my family have died of skin cancer. It hit me hard. As I'm being closely monitored, I created this system for my own use and that of my family. I thought I'd share the code rather than throw it in the garbage can if it's ever useful to others.</p>
     <br>
     <h1 style="font-size: 15px; font-weight: bold;">Contribute:</h1>
-    <p>Open source, non-profit project. All contributions are welcome (<a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Github</a>)</p>
+    <p>Open source, non-profit project. All contributions are welcome (<a href="https://github.com/OGjulian/AIDermato" style="color: blue;" target="_blank">Github</a>).</p>
     <br>
     <br>
     <h1 style="font-size: 20px; font-weight: bold;">1 - AI Dermato chat:</h1>
-    <p>A chat with an AI dermatologist about your moles.</p>
+    <p>A chat with an AI dermatologist about your moles.<a href="https://www.healthline.com/health/skin-cancer/abcd-rule-for-skin-cancer#examining-your-skin" style="color: blue;" target="_blank"> The ABCDE rule</a>.</p>
     <div id="gpt-output"></div>
     <form id="prompt-form" class="mt-auto">
         <label for="prompt" class="sr-only">Prompt</label>
@@ -36,7 +36,7 @@
             <div class="relative mt-2 rounded-md shadow-sm">
                 <input type="text" name="prompt" id="prompt"
                        class="block w-full rounded-md border-0 py-2.5 pl-4 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                       placeholder="Describe your mole">
+                       placeholder="Describe your mole using the ABCDE rule (asymmetry, border, color, diameter, and evolution).">
                 <button class="btn-primary absolute inset-y-0 right-0 flex items-center pr-3">
                     <svg class="hidden" id="spinner-icon" width="24" height="24" fill="#fff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <style>.spinner_b2T7 {
@@ -72,16 +72,16 @@
         </div>
     </form>
     <br>
-    <h1 style="font-size: 20px; font-weight: bold;">2 - AIDermato Image Analyse (Could be cool!)</h1>
+    <h1 style="font-size: 20px; font-weight: bold;">2 - AI Dermato Image Analyse (Could be cool!)</h1>
     <p>A mole photo scanner from a database of cancerous & non-cancerous moles.</p>
     <a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Contribute to the open-source projet</a>
     <br>
-    <h1 style="font-size: 20px; font-weight: bold;">3 - AIDermato Video Analyse (Why not?)</h1>
+    <h1 style="font-size: 20px; font-weight: bold;">3 - AI Dermato Video Analyse (Why not?)</h1>
     <p>A mole video scanner from a database of cancerous & non-cancerous moles.</p>
     <a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Contribute to the open-source projet</a>
     <br>
     <br>
-    <p style="color: red; font-style: italic; font-size: 15px;">*This is not a medical tool but a simple open source project for self-analysis & prevention.</p>
+    <p style="color: red; font-style: italic; font-size: 15px;">*This is not a medical tool but a simple open source system for self-analysis & prevention.</p>
 </main>
 
 <script src="{{ url_for('static', filename='dist/js/script.js') }}"></script>
