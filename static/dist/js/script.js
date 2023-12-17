@@ -31,14 +31,15 @@ function getChatHistory() {
     return Array.from(infoBlocks).map(block => block.innerHTML);
 }
 
-
 async function fetchPromptResponse(prompt) {
+    const staticInstruction = "Answer in English. Answer in the name of AIDermato, an open source dermatologist assistant & in development.";
+
     const response = await fetch("/prompt", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({messages: getChatHistory()}),
+        body: JSON.stringify({ messages: [staticInstruction, ...getChatHistory(), prompt] }),
     });
 
     return response.body.getReader();
