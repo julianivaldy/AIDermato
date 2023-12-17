@@ -16,7 +16,6 @@
 </div>
 
 <main class="mx-auto max-w-6xl px-4 py-10 flex flex-col">
-    <div id="gpt-output"></div>
     <h1 style="font-size: 30px; font-weight: bold;">AI Dermato</h1>
     <p>Monitor the state & evolution of your moles to prevent skin cancer.</p>
     <br>
@@ -24,11 +23,12 @@
     <p>TBH, I created it for my personal use & that of my family (+ to practice coding). I thought I'd share the code instead of throwing it in the garbage can.</p>
     <br>
     <h1 style="font-size: 15px; font-weight: bold;">Contribute:</h1>
-    <p>Open source, non-profit system. All contributions are welcome (<a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Github</a>)</p>
+    <p>Open source, non-profit project. All contributions are welcome (<a href="https://github.com/OGjulian/AIDermato" style="color: blue;">Github</a>)</p>
     <br>
     <br>
     <h1 style="font-size: 20px; font-weight: bold;">1 - AI Dermato chat:</h1>
     <p>A chat with an AI dermatologist about your moles.</p>
+    <div id="gpt-output"></div>
     <form id="prompt-form" class="mt-auto">
         <label for="prompt" class="sr-only">Prompt</label>
         <div>
@@ -87,4 +87,6 @@
 <script src="{{ url_for('static', filename='dist/js/script.js') }}"></script>
 </body>
 </html>
+
+
 
