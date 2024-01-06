@@ -3,7 +3,7 @@ Monitor the state & evolution of your moles to prevent skin cancer.
 
 
 **About:**
-I'm [a Julian](https://julianivaldy.com/), several members of my family have died of skin cancer. It hit me hard. As I'm being closely monitored, I created this system for my own use and that of my family. I thought I'd share the code rather than throw it in the garbage can - it might be useful to others.
+I'm [Julian](https://julianivaldy.com/), several members of my family have died of skin cancer. It hit me hard. As I'm being closely monitored, I created this system for my own use and that of my family. I thought I'd share the code rather than throw it in the garbage can - it might be useful to others.
 
 
 **Contribute:**
