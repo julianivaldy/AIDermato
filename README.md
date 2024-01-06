@@ -10,8 +10,6 @@ I'm [a Julian](https://julianivaldy.com/), several members of my family have die
 This is an open-source (and non-profit!) system. All contributions are welcome.
 
 **Open grants:**
-Open grants (funded by myself ✊):
-
-- Develop a photo scanner feature to analyze and score moles based on the ABCDE framework: $100
-- Develop a video live scanner feature to analyze and score moles based on the ABCDE framework: $150
-- Develop a mapping function to map moles on your body. Every year, you can make a new map and analyze the evolution of moles: $500. 
+- G01: Develop a mole picture scanner feature to analyze & score moles based on the ABCDE framework: $100
+- G02: Develop a mole video live scanner feature to analyze & score moles based on the ABCDE framework: $150
+- G03: Develop a mole mapping feature to perform targeted & intelligent monitoring of moles each year and track their evolution: $500
